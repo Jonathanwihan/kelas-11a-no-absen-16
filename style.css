@@ -1,0 +1,156 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b0e14;
+    color: #ffffff;
+}
+
+/* Styling Header / Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121722;
+    padding: 15px 50px;
+    border-bottom: 2px solid #f39c12;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo a {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #f39c12;
+}
+
+/* Daftar Menu Navigasi */
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links ul li {
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover,
+.nav-links ul li a.active {
+    color: #f39c12;
+}
+
+/* Styling Dropdown Menu */
+.dropdown-menu {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a2234;
+    min-width: 200px;
+    border-radius: 6px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    border: 1px solid #2d3748;
+    padding: 10px 0;
+    flex-direction: column;
+    gap: 0 !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex !important;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+    color: #e2e8f0 !important;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #252f47;
+    color: #f39c12 !important;
+}
+
+/* Tombol Aksi di Kanan */
+.btn-primary {
+    background-color: #f39c12;
+    color: #0b0e14;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e67e22;
+}
+
+/* Styling Hero Banner (Pelengkap Header) */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(11, 14, 20, 0.75), rgba(11, 14, 20, 0.9)), 
+                url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1350&q=80') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #cbd5e1;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn-secondary {
+    display: inline-block;
+    border: 2px solid #f39c12;
+    color: #f39c12;
+    padding: 12px 28px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #f39c12;
+    color: #0b0e14;
+}
